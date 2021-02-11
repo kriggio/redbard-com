@@ -51,6 +51,9 @@ app.get('/', (req, res) => {
     res.render('main', {layout: 'index'});
 });
 
+app.get('/projects/gehenna', (req, res) => {
+    res.render('gehenna', {layout: 'index'});
+});
 
 app.listen(port, () => console.log(`App listening to port ${port}`));
 
